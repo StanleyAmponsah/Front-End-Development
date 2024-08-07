@@ -17,13 +17,10 @@
 
         header {
             position: sticky;
-            top: 0;
             width: 100%;
             background-color: white;
             padding: 30px 0px;
             text-align: center;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
 
@@ -34,7 +31,6 @@
             margin: 0 10px;
             text-decoration: none;
             font-weight: 550;
-            transition: font-weight 0.3s ease;
         }
 
         nav a:hover {
@@ -50,7 +46,7 @@
         .logo {
             float: left;
             padding-left: 20px;
-         
+
         }
 
         .logo a {
@@ -59,6 +55,9 @@
         }
 
 
+        .body {
+            background-color: #b4b4aa5b;
+        }
 
 
         .button a {
@@ -77,18 +76,16 @@
         .about-us-section {
             font-family: 'Playfair Display', serif;
             text-align: center;
-            margin-bottom: 10px 0;
             background-color: #fff;
             padding: 50px 20px;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: auto;
             border-radius: 10px;
             max-width: 60%;
         }
 
         .about-us-section h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 20px;
             color: #5d8e28;
         }
@@ -97,7 +94,6 @@
             font-size: 1.2em;
             margin-bottom: 20px;
             color: #333;
-            line-height: 1.6;
         }
 
         .about-us-section img {
@@ -133,7 +129,6 @@
             text-align: center;
             max-width: 100%;
             height: auto;
-            bottom: 0;
             padding: 20px;
         }
 
@@ -142,7 +137,7 @@
             padding: 40px 20px;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
+            margin: auto;
             border-radius: 10px;
             max-width: 800px;
         }
@@ -159,7 +154,6 @@
             font-size: 1.2em;
             margin-bottom: 20px;
             color: #333;
-            line-height: 1.6;
         }
 
         .contact-section form {
@@ -186,7 +180,6 @@
             border: none;
             border-radius: 5px;
             font-size: 1.2em;
-            cursor: pointer;
             margin-top: 10px;
         }
 
@@ -214,28 +207,46 @@
 
         </nav>
     </header>
+    <div class="body">
+        <br>
+        <br>
+
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free
+                to
+                reach out to us.</p>
+            <p>You can also visit us at our coffee shop or send us an email.</p>
+
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number">
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="location" class="text">
+            <h1>Our Location</h1>
+            <p>Come visit us at:</p>
+            <address>
+                123 Coffee Street,<br>
+                Kumasi, ks 56789
+            </address>
+            <p>We are open from 7:00 AM to 9:00 PM every day.</p>
+        </section>
+        <br>                                                                                                
+        <br>
+        <br>
 
     </div>
-
-    <section class="contact-section">
-        <h1>Contact Us</h1>
-        <p>We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to
-            reach out to us.</p>
-        <p>You can also visit us at our coffee shop or send us an email.</p>
-
-        <form action="submit_contact_form.php" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="tel" name="phone" placeholder="Your Phone Number">
-            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer>   
+    <footer>
         <br>
-        
-            <p>&copy; 2024 Stan's coffee shop. All rights reserved.</p>
+
+        <p>&copy; 2024 Stan's coffee shop. All rights reserved.</p>
     </footer>
 
 </body>
